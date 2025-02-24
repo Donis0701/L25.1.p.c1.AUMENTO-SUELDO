@@ -1,8 +1,8 @@
-export default class Personal {
-    constructor(n,s,t) {
-        this.nombres = n;
-        this.sueldo = s;
-        this.trabajo = t;
+export default class cl_mPersonal {
+    constructor({nombres,sueldo,trabajo}) {
+        this.nombres = nombres;
+        this.sueldo = sueldo;
+        this.trabajo = trabajo;
     }
     set nombres(n) {
         this._nombres = n;

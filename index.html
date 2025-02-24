@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-   <div id="salida"></div>
-    <script src="principal.js" type="module"></script> 
+    <section id="personalForm">
+        <h3>Registro de Personal</h3>
+        <input type="text" id="personalForm_inNombres" placeholder="Nombres" />
+        <input type="text" id="personalForm_inSueldo" placeholder="Sueldo" />
+        <input type="text" id="personalForm_inTrabajo" placeholder="Trabajo" />
+        <button id="personalForm_btProcesar">Procesar</button>
+    </section>
+    <section id="mainForm">
+        <h3>Reporte de la empresa</h3>
+        <p><span id="mainForm_lblpersonal"></span></p>
+        <p>El total de monto adicional que debe pagar la empresa es:$<span id="mainForm_lbltotalAumento"></span></p>
+    </section>
 </body>
+<script type="module">
+    import cl_principal from "./js/principal.js";
+    new cl_principal();
+</script>
 </html>
